@@ -1,0 +1,47 @@
+{
+  "name": "vpncon",
+  "version": "1.0.0",
+  "description": "Vpn connect helper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --progress",
+    "buildClient": "cross-env NODE_ENV=production webpack",
+    "ip": "node ip.js",
+    "buildServer": "cross-env NODE_ENV=development webpack --config webpack.server.config.js",
+    "server": "node ./dist/server.js"
+  },
+  "keywords": [
+    "vpn",
+    "connect",
+    "helper"
+  ],
+  "author": "ngonhan2k5",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "https": "^1.0.0",
+    "qrcode": "^1.4.4",
+    "require": "^2.4.20"
+  },
+  "devDependencies": {
+    "@babel/core": "7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-es2015": "^7.0.0-beta.53",
+    "babel-loader": "8.1.0",
+    "cross-env": "7.0.3",
+    "css-hot-loader": "1.4.4",
+    "css-loader": "5.0.1",
+    "html-webpack-plugin": "4.5.0",
+    "mini-css-extract-plugin": "1.3.3",
+    "node-sass": "5.0.0",
+    "sass-loader": "10.1.0",
+    "style-loader": "2.0.0",
+    "webpack": "5.11.0",
+    "webpack-cli": "4.2.0",
+    "webpack-dev-server": "4.0.0-beta.0",
+    "webpack-node-externals": "^2.5.2"
+  }
+}
