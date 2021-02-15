@@ -7,8 +7,8 @@ Simplify daily VPN AnyConnect login using bash and nodejs
 - RSA SecurID installed on Android (Not tested on Iphone)
 ### Steps:
 1. On computer close AnyConnect if is is running (GUI)
-2. Config *~\.vpn* (username and password) and *connect.sh* (VPN_SERVER Url, passcode HEAD)
-3. Run `sh bash/connect.sh vpn_url passhead` from vpncon
+2. Create configuration file *~\.vpn* (username and password) and *connect.sh* (VPN_SERVER Url, passcode HEAD)
+3. Run `sh bash/start.sh vpn_url passhead` from vpncon
 4. Open: http://localhost:9999 and scan the barcode using your Android phone to get a https link
 5. Open that https link on Phone and follow the instruction:
     - Accept the unsecure to allow open self-sign ssl, we need https to allow page read clipboard.
